@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="icon" type="image/x-icon" href="./hangman.png">
+  <title>Hangman</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="game-info">
+      <div class="hangman">
+        <h1>Hangman</h1>
+      </div>
+      <div class="category">
+        <h3>Word From : <span></span></h3>
+        <h3 class="wrong-attemp">Wrongs: 0/7</h3>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="hangman-draw">
+        <div class="draw">
+          <div class="stand"></div>
+          <div class="hang"></div>
+          <div class="man">
+            <div class="head"></div>
+            <div class="body"></div>
+            <div class="hands"></div>
+            <div class="legs"></div>
+          </div>
+        </div>
+      </div>
+      <div class="alpha"></div>
+    </div>
+    <hr>
+    <div class="guess">
+    </div>
+    <div onclick="resetGame()" class="restart-btn"><span>Start Again</span></div>
+  </div>
+  <script src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
